@@ -1,0 +1,22 @@
+#УСЛУГИ {
+    margin-top: 105px;
+}
+
+.flex-uslugi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+@media (max-width: 768px) {
+    .flex-uslugi {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    #УСЛУГИ {
+        margin-top: 50px;
+    }
+}

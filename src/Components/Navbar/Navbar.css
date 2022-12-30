@@ -1,0 +1,179 @@
+.nav {
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 999;
+}
+
+.nav-scroll {
+    box-shadow: 0px 0px 15px 5px #000;
+    background-color: #1b1b1b;
+    padding-bottom: 25px;
+    transition: all 0.5s ease;
+    opacity: 0.95;
+    z-index: 99999;
+}
+
+.flex-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgNavbar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.imgNavbar:hover {
+    opacity: 0.9;
+} 
+
+.imgNavbar > img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.link-nav {
+    display: flex;
+    align-items: center;
+}
+
+.link-nav > a {
+    text-decoration: none;
+    font-size: 19.2px;
+    text-transform: uppercase;
+    color: #d8deff;
+    font-weight: 700;
+    margin-right: 24px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+.link-nav > a:last-child {
+    margin-right: 0;
+}
+
+.link-nav > a::before {
+    content: '';
+    width: 40%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 29px;
+    background-color: #d8deff;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+    margin: 0 auto;
+}
+
+.link-nav > a:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+.theme > i {
+    color: #d8deff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.theme > i:last-child {
+    display: none;
+}
+
+.icon-mobile {
+    color: #d8deff;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 19px;
+    display: none;
+}
+
+.flex-icon {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    transition: .35s ease-in-out;
+    width: 60%;
+    background-color: rgba(27,27,27,.95);
+    -webkit-box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 60%);
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 60%);
+    height: 100vh;
+    top: 0;
+    padding-top: 70px;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.show-menu-mobile {
+    display: block;
+}
+
+.link-nav-mobile {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.link-nav-mobile > a {
+    display: block;
+    margin: 35px 0;
+}
+
+.link-nav-mobile > a::before {
+    width: 100%;
+}
+
+.btn-mobile {
+    margin: 0 !important;
+}
+
+.btn-mobile > button {
+    margin: 0;
+}
+
+.icon-mobile-close {
+    position: absolute;
+    top: -85px;
+    right: 40px;
+}
+
+@media (max-width: 1100px) {
+    .link-nav > a {
+        font-size: 18px;
+    }
+  
+  }
+
+  @media (max-width: 700px) {
+    .link-nav {
+        display: none;
+    }
+
+    .link-nav-mobile {
+        display: block !important;
+    }
+
+    .icon-mobile {
+        display: block;
+    }
+
+    .lorem-banner {
+        width: 100% !important;
+    }
+  
+  }
