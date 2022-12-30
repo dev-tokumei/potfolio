@@ -13,7 +13,7 @@ function Header() {
            <div className='container2'>
                 <p>Привет Я Faridun</p>
            </div>
-            <div data-aos="fade-up" data-aos-duration="1000" >
+            <div >
             <div className='container'>
                 <p>Привет Я</p>
                 <section class="animation">

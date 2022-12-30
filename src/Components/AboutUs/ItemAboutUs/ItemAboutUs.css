@@ -95,3 +95,13 @@
         margin-bottom: 0;
     }
 }
+
+@media (max-width: 400px) {
+    .card-about-us {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+
